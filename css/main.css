@@ -2,17 +2,14 @@ html{
   color: black;
 }
 
-img{
-  margin-bottom: 20px;
-}
-
 .navigation{
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .footer{
   margin-top: 40px;
   min-height: 40px;
+  font-size: 0.75rem;
 }
 
 .directions{
@@ -21,4 +18,18 @@ img{
 
 .list-inline-item {
   padding: .5rem 1rem;
+}
+
+.slideshow img{
+  object-fit: cover;
+}
+
+.image-container{
+  max-height: 350px;
+}
+
+@media screen and (max-width: 480px){
+  img{
+    max-height: 150px;
+  }
 }
