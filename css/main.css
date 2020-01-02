@@ -4,6 +4,12 @@ html{
 
 .navigation{
   margin-bottom: 30px;
+  font-size: 1.1rem;
+  font-weight: bolder;
+}
+
+.nav-link{
+  padding: 10px 16px;
 }
 
 .footer{
@@ -44,12 +50,20 @@ html{
   object-fit: cover;
 }
 
-.container{
+.content{
   padding-bottom: 40px;
+}
+
+.accordion{
+  margin-bottom: 40px;
 }
 
 @media screen and (max-width: 480px){
   .header-image{
     max-height: 150px;
   }
+}
+
+@media screen and (max-width: 950px){
+
 }
