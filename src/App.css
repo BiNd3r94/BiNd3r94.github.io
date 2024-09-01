@@ -1,0 +1,58 @@
+
+.p-component, .p-menubar a span {
+  color: var(--primary-900);
+}
+
+.p-menubar {
+  padding: 16px 0;
+}
+
+.p-menubar .p-menuitem {
+  border-left: solid var(--primary-900) 1px;
+}
+
+.p-menubar .p-menuitem-content {
+  border-radius: 0;
+}
+
+.p-menubar .p-menuitem-content:hover {
+  background-color: var(--primary-50);
+}
+
+.p-menubar .p-menuitem:last-child {
+  border-right: solid var(--primary-900) 1px;
+}
+
+.p-accordion-header a span {
+  color: var(--primary-900)
+}
+
+.p-card {
+  background-color: var(--primary-100);
+  box-shadow: none;
+  border-radius: 0;
+  margin-bottom: 32px;
+}
+
+.p-accordion-header a {
+  background-color: var(--primary-color);
+  border-radius: 0;
+}
+
+.p-accordion-tab {
+  margin-bottom: 32px;
+}
+
+.p-accordion-tab .p-accordion-content {
+  border: none;
+  border-radius: 0;
+  background-color: var(--primary-100);
+}
+
+.cert-image {
+  max-width: 300px;
+}
+
+@media screen and (min-width: 768px) {
+  max-width: 600px
+}
