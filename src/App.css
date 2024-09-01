@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+
+.p-component, .p-menubar a span {
+  color: var(--primary-900);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.p-menubar {
+  padding: 16px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.p-menubar .p-menuitem {
+  border-left: solid var(--primary-900) 1px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.p-menubar .p-menuitem-content {
+  border-radius: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.p-menubar .p-menuitem-content:hover {
+  background-color: var(--primary-50);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.p-menubar .p-menuitem:last-child {
+  border-right: solid var(--primary-900) 1px;
+}
+
+.p-accordion-header a span {
+  color: var(--primary-900)
+}
+
+.p-card {
+  background-color: var(--primary-100);
+  box-shadow: none;
+  border-radius: 0;
+  margin-bottom: 32px;
+}
+
+.p-accordion-header a {
+  background-color: var(--primary-color);
+  border-radius: 0;
+}
+
+.p-accordion-tab {
+  margin-bottom: 32px;
+}
+
+.p-accordion-tab .p-accordion-content {
+  border: none;
+  border-radius: 0;
+  background-color: var(--primary-100);
+}
+
+.cert-image {
+  max-width: 300px;
+}
+
+@media screen and (min-width: 768px) {
+  max-width: 600px
 }

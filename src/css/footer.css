@@ -1,0 +1,33 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  padding-right: 16px;
+  background-color: var(--primary-color);
+  height: 250px;
+}
+
+.footer-content {
+  width: var(--content-width-mobile);
+  margin: 32px auto 32px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-legal {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-content {
+    width: var(--content-width-tablet);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-content {
+    width: var(--content-width);
+  }
+}
