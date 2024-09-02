@@ -1,0 +1,66 @@
+@import "css/header.css";
+@import "css/footer.css";
+
+:root {
+  --secondary-color: #aaa;
+  --content-width: 1000px;
+  --content-width-tablet: 750px;
+  --content-width-mobile: 370px;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--primary-800)
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+.page-container {
+  position: relative;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.main-content {
+  max-width: var(--content-width-mobile);
+  margin: 32px auto 0 auto;
+  padding-top: 8px;
+  padding-bottom: 400px;
+}
+
+nav {
+  width: var(--content-width-mobile);
+  margin: 0 auto 0 auto;
+}
+
+a {
+  color: var(--primary-700)
+}
+
+@media screen and (min-width: 768px) {
+  .main-content {
+    max-width: var(--content-width-tablet);
+  }
+
+  nav {
+    width: var(--content-width-tablet);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-content {
+    max-width: var(--content-width);
+  }
+
+  nav {
+    width: var(--content-width);
+  }
+}

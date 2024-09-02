@@ -1,0 +1,31 @@
+.header {
+  background-color: var(--primary-color);
+}
+
+.header-image {
+  display: none;
+}
+
+.header-menu {
+  background-color: var(--primary-color);
+  border: none;
+}
+
+.header-content-container {
+  position: absolute;
+  top: 6rem;
+  margin: auto;
+}
+
+.header-content {
+  width: var(--content-width-tablet);
+  background-color: var(--primary-color);
+  padding: 32px;
+  margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .header-image {
+    display: block;
+  }
+}
